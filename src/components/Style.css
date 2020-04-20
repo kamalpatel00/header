@@ -23,7 +23,6 @@
 }
 
 .Header {
-  position: fixed;
   background-color: cadetblue;
   transition: 0.5s;
   width: 1544px;

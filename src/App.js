@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Header from "./components/Header";
 import About from "./components/About";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "../src/components/Style.css";
 
 function App() {
   return (

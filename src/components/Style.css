@@ -8,15 +8,15 @@
 
 .menu-ul li {
   display: inline-block;
-  margin-left: 50px;
-  padding-left: 10px;
+  margin: 1px;
+  padding-left: 5px;
 }
 
 .logo {
-  /* /* width: 70px; */
   margin-top: 5px;
-  /* height: 60px; */
-  padding-right: 60%;
+  float: left;
+
+  padding-right: 0%;
   width: 158px;
   height: 57px;
   object-fit: contain;
@@ -30,13 +30,20 @@
   height: 66px;
 }
 #con {
+  margin-left: 15px;
   margin-top: 10px;
-  width: 130px;
+  width: 170px;
   height: 32px;
   border-radius: 6px;
   border: solid 1px #141516;
   text-decoration: inherit;
 }
-.contact {
-  background-image: url("https://cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/003/977/original/BettercomGreenhouse-1024x587.png?1554404619");
+.scrolled {
+  position: fixed;
+  background-color: lightsalmon;
+}
+.nav {
+  width: 100%;
+  justify-content: center;
+  transition: 3s;
 }

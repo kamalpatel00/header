@@ -7,6 +7,8 @@ import Header from "./components/Header";
 import About from "./components/About";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../src/components/Style.css";
+import Excercise from "./components_Grid/Excercise";
+import Footer from "./components_Grid/Footer";
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
       </Router>
+      {/* <Header />
+      <Excercise />
+      <Footer /> */}
+
       {/*       
       <Home />
       <About />

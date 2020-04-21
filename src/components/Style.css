@@ -1,9 +1,9 @@
 .menu-ul {
   list-style-type: none;
-  margin: 0;
+  /* margin: 0; */
   float: right;
   margin-right: 5%;
-  margin-top: 4px;
+  margin-top: 15px;
 }
 
 .menu-ul li {
@@ -24,26 +24,57 @@
 
 .Header {
   position: fixed;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   transition: 0.5s;
-  width: 1544px;
+  width: 1024px;
   height: 66px;
+  margin-top: 100px;
 }
-#con {
-  margin-left: 15px;
-  margin-top: 10px;
-  width: 170px;
+.contact {
+  float: right;
+  width: 75px;
+  height: 10px;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #000000;
+  width: 164px;
   height: 32px;
-  border-radius: 6px;
+  border-radius: 4px;
   border: solid 1px #141516;
-  text-decoration: inherit;
+
+  /* margin-left: 15px; */
+  /* margin-top: 10px; */
+  /* width: 124px;
+  font-family: Montserrat;
+  height: 32px;
+  border-radius: 4px;
+  border: solid 1px #141516;
+  text-decoration: inherit; */
 }
 .scrolled {
   position: fixed;
-  background-color: lightsalmon;
+  background-color: wheat;
 }
 .nav {
   width: 100%;
   justify-content: center;
   transition: 3s;
+}
+
+.creditScore {
+  width: 63px;
+  height: 30px;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #000000;
 }

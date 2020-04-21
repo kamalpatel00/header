@@ -27,50 +27,60 @@ class Header extends Component {
   }
   render() {
     return (
-      <div className="hdiv">
-        <div className={this.state.scrolled ? "nav scrolled" : "nav"}>
-          <img
-            className="logo"
-            src="https://cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/003/977/original/BettercomGreenhouse-1024x587.png?1554404619"
-          />
+      <div className={this.state.scrolled ? "nav scrolled" : "nav"}>
+        <img
+          className="logo"
+          src="https://cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/003/977/original/BettercomGreenhouse-1024x587.png?1554404619"
+        />
 
-          <ul className="menu-ul">
-            {/* <li>
+        <ul className="menu-ul">
+          {/* <li>
             <Link to="/"> Home</Link>
           </li> */}
-            <li>
-              <Link to="/about">
-                <MenuItem
-                  style={{
-                    paddingLeft: 7,
-                    textDecoration: "none",
-                    color: "black",
-                    marginTop: 0,
-                  }}
-                >
-                  Credit score
-                </MenuItem>
-              </Link>
-            </li>
-            <li id="con">
-              <Link to="/contact">
-                <MenuItem
-                  style={{
-                    paddingLeft: 7,
-                    marginTop: 0,
+          <li>
+            <Link to="/about">
+              <MenuItem
+                className="creditScore"
+                style={{
+                  paddingLeft: 7,
+                  textDecoration: "none",
+                  color: "black",
+                  marginTop: -4,
+                }}
+              >
+                Credit score
+              </MenuItem>
+            </Link>
+          </li>
 
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  <PhoneMissedIcon fontSize="small" />
-                  <span> </span>
-                  +91-9648877586
-                </MenuItem>
-              </Link>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <MenuItem>|</MenuItem>
+          </li>
+
+          <li className="contact">
+            <Link to="/contact">
+              <MenuItem
+                style={{
+                  paddingLeft: 7,
+                  marginTop: -2,
+
+                  fontsize: 10,
+                  fontweight: 600,
+                  textDecoration: "none",
+                  color: "black",
+                }}
+              >
+                <PhoneMissedIcon
+                  className="missedcall"
+                  fontSize="small"
+                  style={{ width: 18, height: 17, marginBottom: -3 }}
+                />
+                <span> </span>
+                +91-9648877586
+              </MenuItem>
+            </Link>
+          </li>
+        </ul>
       </div>
     );
   }

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PhoneMissedIcon from "@material-ui/icons/PhoneMissed";
 import "./Style.css";
 import { MenuItem } from "@material-ui/core";
+import Logo from "./bettr.svg";
 class Header extends Component {
   constructor() {
     super();
@@ -28,10 +29,7 @@ class Header extends Component {
   render() {
     return (
       <div className={this.state.scrolled ? "nav scrolled" : "nav"}>
-        <img
-          className="logo"
-          src="https://cdn.greenhouse.io/external_greenhouse_job_boards/logos/000/003/977/original/BettercomGreenhouse-1024x587.png?1554404619"
-        />
+        <img className="logo" src={Logo} />
 
         <ul className="menu-ul">
           {/* <li>
@@ -46,9 +44,10 @@ class Header extends Component {
                   textDecoration: "none",
                   color: "black",
                   marginTop: -4,
+                  fontFamily: "Montserrat",
                 }}
               >
-                Credit score
+                Credit Score
               </MenuItem>
             </Link>
           </li>
@@ -64,21 +63,24 @@ class Header extends Component {
                   marginLeft: -15,
                   paddingLeft: 7,
                   marginTop: -2,
-
+                  letterSpacing: "normal",
                   fontsize: 10,
                   fontweight: 600,
                   textDecoration: "none",
                   color: "black",
+                  fontFamily: "Montserrat",
+                  fontStretch: "normal",
+                  fontStyle: "normal",
                 }}
               >
                 <PhoneMissedIcon
                   className="missedcall"
                   fontSize="small"
                   style={{
-                    width: 30,
+                    width: 18,
                     height: 17,
                     marginBottom: -3,
-                    marginLeft: -2,
+                    marginLeft: 15,
                   }}
                 />
                 <span> </span>

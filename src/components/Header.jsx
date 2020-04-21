@@ -61,6 +61,7 @@ class Header extends Component {
             <Link to="/contact">
               <MenuItem
                 style={{
+                  marginLeft: -15,
                   paddingLeft: 7,
                   marginTop: -2,
 
@@ -73,10 +74,15 @@ class Header extends Component {
                 <PhoneMissedIcon
                   className="missedcall"
                   fontSize="small"
-                  style={{ width: 18, height: 17, marginBottom: -3 }}
+                  style={{
+                    width: 30,
+                    height: 17,
+                    marginBottom: -3,
+                    marginLeft: -2,
+                  }}
                 />
                 <span> </span>
-                +91-9648877586
+                080-46809259
               </MenuItem>
             </Link>
           </li>
